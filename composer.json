@@ -1,6 +1,6 @@
 {
     "name": "fixcms/instasass",
-    "description": "Compiles SASS into CSS and stores the result on a CDN.",
+    "description": "Have your SASS loaded from a third party address cashed by a CDN and compiled all using one line of PHP code!",
     "type": "library",
     "keywords": ["compile","sass","cdn"],
     "homepage": "https://instasass.lc.lv",
@@ -10,7 +10,7 @@
     },
     "autoload": {
 	    "psr-4": {
-	      "Instasass\\Instasassapi\\": "src/"
+	      "Instasass\\Instasassapi": "src/"
 	    }
 	},
 }
