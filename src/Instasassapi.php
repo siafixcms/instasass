@@ -2,8 +2,6 @@
 
 namespace Instasass;
 
-use JsonRPC\Client;
-
 /**
  * Instasass service class
  *

@@ -7,6 +7,7 @@ session_start();
 require_once 'vendor/autoload.php';
 
 // Use the appropriate class
+use JsonRPC\Client;
 use Instasass\Instasassapi;
 
 // Initialize class and connect to the service
