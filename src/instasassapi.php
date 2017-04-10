@@ -1,6 +1,10 @@
 <?php
 
+// Set the namespace
 namespace Instasass;
+
+// Use the RPC client
+use JsonRPC\Client;
 
 /**
  * Instasass service class
@@ -8,7 +12,7 @@ namespace Instasass;
  * @package Instasass
  * @author  Valdis Licis
  */
-Class Instasassapi {
+Class instasassapi {
 
 	/**
 	* Some variables
