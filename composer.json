@@ -1,0 +1,16 @@
+{
+    "name": "fixcms/instasass",
+    "description": "Compiles SASS into CSS and stores the result on a CDN.",
+    "type": "library",
+    "keywords": ["compile","sass","cdn"],
+    "homepage": "https://instasass.lc.lv",
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "fguillot/json-rpc": "1.2.*"
+    },
+    "autoload": {
+        "fixcms": {
+            "instasass": "src"
+        }
+    }
+}
