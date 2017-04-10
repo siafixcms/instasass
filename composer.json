@@ -9,8 +9,8 @@
         "fguillot/json-rpc": "1.2.*"
     },
     "autoload": {
-        "psr-0": {
-            "instasass": "src"
-        }
-    }
+	    "psr-4": {
+	      "Instasass\\Instasassapi\\": "src/"
+	    }
+	},
 }
