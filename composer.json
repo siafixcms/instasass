@@ -8,6 +8,13 @@
         "php": "^5.6 || ^7.0",
         "fguillot/json-rpc": "1.2.*"
     },
+    "authors": [
+        {
+            "name": "Valdis Līcis",
+            "email": "valdis.licis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "autoload": {
 	    "psr-0": {
 	      "Instasass": "src/"
