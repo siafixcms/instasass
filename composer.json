@@ -9,7 +9,7 @@
         "fguillot/json-rpc": "1.2.*"
     },
     "autoload": {
-        "fixcms": {
+        "psr-0": {
             "instasass": "src"
         }
     }
