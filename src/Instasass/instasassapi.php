@@ -22,7 +22,7 @@ Class instasassapi {
 
 
 	function __construct( $sApiKey ) {
-		$this->rClient = new Client('https://api.instasass.lc.lv/api?api_key=' . $sApiKey);
+		$this->rClient = new Client('https://instasass.lc.lv/api?api_key=' . $sApiKey);
 	}
 
 	/**
