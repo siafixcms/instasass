@@ -1,0 +1,23 @@
+{
+    "name": "fixcms/instasass",
+    "description": "Have your SASS loaded from a third party address cashed by a CDN and compiled all using one line of PHP code!",
+    "type": "library",
+    "keywords": ["compile","sass","cdn"],
+    "homepage": "https://instasass.lc.lv",
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "fguillot/json-rpc": "1.2.*"
+    },
+    "authors": [
+        {
+            "name": "Valdis Līcis",
+            "email": "valdis.licis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+	    "psr-0": {
+	      "Instasass": "src/"
+	    }
+	}
+}
