@@ -40,19 +40,19 @@ Class instasassapi {
 	* @return string
 	* @author Valdis Licis
 	*/
-	public function sass2cssSaved( $sSrc, $bReturnSource = false, $bRecreate = false, $sCompilingMode = 'compressed' ) {
+	public function sass2cssSaved( $sSrc, $bReturnSource = false, $bRecreate = false, $sCompilingMode = 'compressed', $bGoAroundCDN = false ) {
 		global $_SESSION;
 		if( !isset($_SESSION['rawSCSS'][$sSrc]) || $bRecreate ) {
 			$_SESSION['rawSCSS'][$sSrc] = file_get_contents($sSrc);
 		}
 		if( $bReturnSource ) {
 			if( !isset($_SESSION['cssSources'][md5($_SESSION['rawSCSS'][$sSrc])]) ) {
-				$_SESSION['cssSources'][md5($_SESSION['rawSCSS'][$sSrc])] = $this->sass2css($_SESSION['rawSCSS'][$sSrc], $bReturnSource, $sCompilingMode);
+				$_SESSION['cssSources'][md5($_SESSION['rawSCSS'][$sSrc])] = $this->sass2css($_SESSION['rawSCSS'][$sSrc], $bReturnSource, $sCompilingMode, $bGoAroundCDN);
 			}
 			return $_SESSION['cssSources'][md5($_SESSION['rawSCSS'][$sSrc])];
 		} else {
 			if( !isset($_SESSION['cssURLs'][md5($_SESSION['rawSCSS'][$sSrc])]) ) {
-				$_SESSION['cssURLs'][md5($_SESSION['rawSCSS'][$sSrc])] = $this->sass2css($_SESSION['rawSCSS'][$sSrc], $bReturnSource, $sCompilingMode);
+				$_SESSION['cssURLs'][md5($_SESSION['rawSCSS'][$sSrc])] = $this->sass2css($_SESSION['rawSCSS'][$sSrc], $bReturnSource, $sCompilingMode, $bGoAroundCDN);
 			}
 			return $_SESSION['cssURLs'][md5($_SESSION['rawSCSS'][$sSrc])];
 		}
